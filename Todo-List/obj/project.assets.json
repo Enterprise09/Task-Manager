@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "CircleProgressBar/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/circle_progressbar.dll": {}
+        },
+        "runtime": {
+          "lib/circle_progressbar.dll": {}
+        }
+      },
+      "Microsoft.Chart.Controls/4.7.2046": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Web.DataVisualization.Design.dll": {},
+          "lib/net35/System.Web.DataVisualization.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.Design.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Web.DataVisualization.Design.dll": {},
+          "lib/net35/System.Web.DataVisualization.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.Design.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CircleProgressBar/1.0.1": {
+      "sha512": "72iinQK1hVVhzpj/mxVIeKyLWPDMCj5ieqIZLLSPtPj3h295tPlQE9DMa8o4v2nWJi3nNNHrNlJlqE82tSjLDw==",
+      "type": "package",
+      "path": "circleprogressbar/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "circleprogressbar.1.0.1.nupkg.sha512",
+        "circleprogressbar.nuspec",
+        "lib/circle_progressbar.dll"
+      ]
+    },
+    "Microsoft.Chart.Controls/4.7.2046": {
+      "sha512": "tSNkrA2zBGiRFC5Xmb2pnowds+2919zGyuiNMZf5cP1OpKi/Q1qPbQ8xWr2jnr8hCfBFiRV9WeIdCANMpo/jRw==",
+      "type": "package",
+      "path": "microsoft.chart.controls/4.7.2046",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Supplemental Redist License_English.docx",
+        "lib/net35/System.Web.DataVisualization.Design.dll",
+        "lib/net35/System.Web.DataVisualization.dll",
+        "lib/net35/System.Windows.Forms.DataVisualization.Design.dll",
+        "lib/net35/System.Windows.Forms.DataVisualization.dll",
+        "microsoft.chart.controls.4.7.2046.nupkg.sha512",
+        "microsoft.chart.controls.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "CircleProgressBar >= 1.0.1",
+      "Microsoft.Chart.Controls >= 4.7.2046"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Enterprise\\.nuget\\packages\\": {}
@@ -45,6 +102,16 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "CircleProgressBar": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
+          "Microsoft.Chart.Controls": {
+            "target": "Package",
+            "version": "[4.7.2046, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -66,5 +133,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "프로젝트 대상 프레임워크 'net5.0-windows7.0' 대신 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8'을(를) 사용하여 패키지 'CircleProgressBar 1.0.1'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "libraryId": "CircleProgressBar",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "프로젝트 대상 프레임워크 'net5.0-windows7.0' 대신 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8'을(를) 사용하여 패키지 'Microsoft.Chart.Controls 4.7.2046'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "libraryId": "Microsoft.Chart.Controls",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
 }
