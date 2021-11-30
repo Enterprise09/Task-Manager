@@ -40,3 +40,4 @@ D:\Programming\Todo-List\Todo-List\bin\Debug\net5.0-windows\System.Web.DataVisua
 D:\Programming\Todo-List\Todo-List\bin\Debug\net5.0-windows\System.Windows.Forms.DataVisualization.Design.dll
 D:\Programming\Todo-List\Todo-List\bin\Debug\net5.0-windows\System.Windows.Forms.DataVisualization.dll
 D:\Programming\Todo-List\Todo-List\bin\Debug\net5.0-windows\circle_progressbar.dll
+D:\Programming\Todo-List\Todo-List\obj\Debug\net5.0-windows\Todo_List.Form1.resources
