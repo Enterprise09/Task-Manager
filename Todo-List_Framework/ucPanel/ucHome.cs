@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Todo_List_Framework
+namespace Todo_List_Framework.ucPanel
 {
-    public partial class Notepad : Form
+    public partial class ucHome : UserControl
     {
-        public Notepad()
+        public ucHome()
         {
             InitializeComponent();
-        }
-
-        private void Notepad_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

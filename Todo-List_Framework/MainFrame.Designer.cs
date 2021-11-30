@@ -1,7 +1,7 @@
 ﻿
 namespace Todo_List_Framework
 {
-    partial class Home
+    partial class MainFrame
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -29,39 +29,35 @@ namespace Todo_List_Framework
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrame));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pb_logout = new System.Windows.Forms.PictureBox();
-            this.pb_setting = new System.Windows.Forms.PictureBox();
-            this.pb_addJob = new System.Windows.Forms.PictureBox();
-            this.pb_notePad = new System.Windows.Forms.PictureBox();
-            this.pb_jobList = new System.Windows.Forms.PictureBox();
-            this.pb_dashboard = new System.Windows.Forms.PictureBox();
             this.lbl_lobout = new System.Windows.Forms.Label();
             this.lbl_setting = new System.Windows.Forms.Label();
-            this.lbl_addJob = new System.Windows.Forms.Label();
+            this.lbl_contact = new System.Windows.Forms.Label();
             this.lbl_notePad = new System.Windows.Forms.Label();
             this.lbl_jobList = new System.Windows.Forms.Label();
             this.lbl_dashboard = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_profile_email = new System.Windows.Forms.Label();
             this.lbl_profile_name = new System.Windows.Forms.Label();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.pb_logout = new System.Windows.Forms.PictureBox();
+            this.pb_setting = new System.Windows.Forms.PictureBox();
+            this.pb_addJob = new System.Windows.Forms.PictureBox();
+            this.pb_notePad = new System.Windows.Forms.PictureBox();
+            this.pb_jobList = new System.Windows.Forms.PictureBox();
+            this.pb_dashboard = new System.Windows.Forms.PictureBox();
             this.pb_profile = new System.Windows.Forms.PictureBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_setting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_addJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_notePad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_jobList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_profile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,7 +72,7 @@ namespace Todo_List_Framework
             this.panel1.Controls.Add(this.pb_dashboard);
             this.panel1.Controls.Add(this.lbl_lobout);
             this.panel1.Controls.Add(this.lbl_setting);
-            this.panel1.Controls.Add(this.lbl_addJob);
+            this.panel1.Controls.Add(this.lbl_contact);
             this.panel1.Controls.Add(this.lbl_notePad);
             this.panel1.Controls.Add(this.lbl_jobList);
             this.panel1.Controls.Add(this.lbl_dashboard);
@@ -89,64 +85,10 @@ namespace Todo_List_Framework
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel3.Location = new System.Drawing.Point(1, 333);
+            this.panel3.Location = new System.Drawing.Point(0, 333);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(12, 94);
             this.panel3.TabIndex = 1;
-            // 
-            // pb_logout
-            // 
-            this.pb_logout.Image = global::Todo_List_Framework.Properties.Resources.log_out;
-            this.pb_logout.Location = new System.Drawing.Point(374, 876);
-            this.pb_logout.Name = "pb_logout";
-            this.pb_logout.Size = new System.Drawing.Size(48, 48);
-            this.pb_logout.TabIndex = 2;
-            this.pb_logout.TabStop = false;
-            // 
-            // pb_setting
-            // 
-            this.pb_setting.Image = global::Todo_List_Framework.Properties.Resources.setting;
-            this.pb_setting.Location = new System.Drawing.Point(374, 816);
-            this.pb_setting.Name = "pb_setting";
-            this.pb_setting.Size = new System.Drawing.Size(48, 48);
-            this.pb_setting.TabIndex = 2;
-            this.pb_setting.TabStop = false;
-            // 
-            // pb_addJob
-            // 
-            this.pb_addJob.Image = global::Todo_List_Framework.Properties.Resources.add_job;
-            this.pb_addJob.Location = new System.Drawing.Point(345, 614);
-            this.pb_addJob.Name = "pb_addJob";
-            this.pb_addJob.Size = new System.Drawing.Size(61, 61);
-            this.pb_addJob.TabIndex = 2;
-            this.pb_addJob.TabStop = false;
-            // 
-            // pb_notePad
-            // 
-            this.pb_notePad.Image = global::Todo_List_Framework.Properties.Resources.note;
-            this.pb_notePad.Location = new System.Drawing.Point(345, 526);
-            this.pb_notePad.Name = "pb_notePad";
-            this.pb_notePad.Size = new System.Drawing.Size(61, 61);
-            this.pb_notePad.TabIndex = 2;
-            this.pb_notePad.TabStop = false;
-            // 
-            // pb_jobList
-            // 
-            this.pb_jobList.Image = global::Todo_List_Framework.Properties.Resources.clipboard;
-            this.pb_jobList.Location = new System.Drawing.Point(345, 438);
-            this.pb_jobList.Name = "pb_jobList";
-            this.pb_jobList.Size = new System.Drawing.Size(61, 61);
-            this.pb_jobList.TabIndex = 2;
-            this.pb_jobList.TabStop = false;
-            // 
-            // pb_dashboard
-            // 
-            this.pb_dashboard.Image = global::Todo_List_Framework.Properties.Resources.dashboard;
-            this.pb_dashboard.Location = new System.Drawing.Point(345, 350);
-            this.pb_dashboard.Name = "pb_dashboard";
-            this.pb_dashboard.Size = new System.Drawing.Size(61, 61);
-            this.pb_dashboard.TabIndex = 2;
-            this.pb_dashboard.TabStop = false;
             // 
             // lbl_lobout
             // 
@@ -170,16 +112,17 @@ namespace Todo_List_Framework
             this.lbl_setting.TabIndex = 1;
             this.lbl_setting.Text = "SETTING";
             // 
-            // lbl_addJob
+            // lbl_contact
             // 
-            this.lbl_addJob.AutoSize = true;
-            this.lbl_addJob.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_addJob.Font = new System.Drawing.Font("MesloLGS NF", 32F, System.Drawing.FontStyle.Bold);
-            this.lbl_addJob.Location = new System.Drawing.Point(36, 617);
-            this.lbl_addJob.Name = "lbl_addJob";
-            this.lbl_addJob.Size = new System.Drawing.Size(212, 54);
-            this.lbl_addJob.TabIndex = 1;
-            this.lbl_addJob.Text = "ADD JOB";
+            this.lbl_contact.AutoSize = true;
+            this.lbl_contact.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_contact.Font = new System.Drawing.Font("MesloLGS NF", 32F, System.Drawing.FontStyle.Bold);
+            this.lbl_contact.Location = new System.Drawing.Point(36, 617);
+            this.lbl_contact.Name = "lbl_contact";
+            this.lbl_contact.Size = new System.Drawing.Size(212, 54);
+            this.lbl_contact.TabIndex = 1;
+            this.lbl_contact.Text = "CONTACT";
+            this.lbl_contact.Click += new System.EventHandler(this.lbl_addJob_Click);
             // 
             // lbl_notePad
             // 
@@ -191,6 +134,7 @@ namespace Todo_List_Framework
             this.lbl_notePad.Size = new System.Drawing.Size(212, 54);
             this.lbl_notePad.TabIndex = 1;
             this.lbl_notePad.Text = "NOTEPAD";
+            this.lbl_notePad.Click += new System.EventHandler(this.lbl_notePad_Click);
             // 
             // lbl_jobList
             // 
@@ -246,6 +190,70 @@ namespace Todo_List_Framework
             this.lbl_profile_name.TabIndex = 1;
             this.lbl_profile_name.Text = "NAME";
             // 
+            // mainPanel
+            // 
+            this.mainPanel.BackColor = System.Drawing.Color.White;
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mainPanel.Location = new System.Drawing.Point(428, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(1376, 941);
+            this.mainPanel.TabIndex = 1;
+            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
+            // 
+            // pb_logout
+            // 
+            this.pb_logout.Image = global::Todo_List_Framework.Properties.Resources.log_out;
+            this.pb_logout.Location = new System.Drawing.Point(374, 876);
+            this.pb_logout.Name = "pb_logout";
+            this.pb_logout.Size = new System.Drawing.Size(48, 48);
+            this.pb_logout.TabIndex = 2;
+            this.pb_logout.TabStop = false;
+            // 
+            // pb_setting
+            // 
+            this.pb_setting.Image = global::Todo_List_Framework.Properties.Resources.setting;
+            this.pb_setting.Location = new System.Drawing.Point(374, 816);
+            this.pb_setting.Name = "pb_setting";
+            this.pb_setting.Size = new System.Drawing.Size(48, 48);
+            this.pb_setting.TabIndex = 2;
+            this.pb_setting.TabStop = false;
+            // 
+            // pb_addJob
+            // 
+            this.pb_addJob.Image = global::Todo_List_Framework.Properties.Resources.contact;
+            this.pb_addJob.Location = new System.Drawing.Point(345, 614);
+            this.pb_addJob.Name = "pb_addJob";
+            this.pb_addJob.Size = new System.Drawing.Size(61, 61);
+            this.pb_addJob.TabIndex = 2;
+            this.pb_addJob.TabStop = false;
+            // 
+            // pb_notePad
+            // 
+            this.pb_notePad.Image = global::Todo_List_Framework.Properties.Resources.note;
+            this.pb_notePad.Location = new System.Drawing.Point(345, 526);
+            this.pb_notePad.Name = "pb_notePad";
+            this.pb_notePad.Size = new System.Drawing.Size(61, 61);
+            this.pb_notePad.TabIndex = 2;
+            this.pb_notePad.TabStop = false;
+            // 
+            // pb_jobList
+            // 
+            this.pb_jobList.Image = global::Todo_List_Framework.Properties.Resources.clipboard;
+            this.pb_jobList.Location = new System.Drawing.Point(345, 438);
+            this.pb_jobList.Name = "pb_jobList";
+            this.pb_jobList.Size = new System.Drawing.Size(61, 61);
+            this.pb_jobList.TabIndex = 2;
+            this.pb_jobList.TabStop = false;
+            // 
+            // pb_dashboard
+            // 
+            this.pb_dashboard.Image = global::Todo_List_Framework.Properties.Resources.dashboard;
+            this.pb_dashboard.Location = new System.Drawing.Point(345, 350);
+            this.pb_dashboard.Name = "pb_dashboard";
+            this.pb_dashboard.Size = new System.Drawing.Size(61, 61);
+            this.pb_dashboard.TabIndex = 2;
+            this.pb_dashboard.TabStop = false;
+            // 
             // pb_profile
             // 
             this.pb_profile.Image = global::Todo_List_Framework.Properties.Resources.health_test;
@@ -255,52 +263,33 @@ namespace Todo_List_Framework
             this.pb_profile.TabIndex = 2;
             this.pb_profile.TabStop = false;
             // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(519, 86);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(627, 647);
-            this.chart1.TabIndex = 1;
-            this.chart1.Text = "chart1";
-            // 
-            // Home
+            // MainFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1804, 941);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Home";
+            this.Name = "MainFrame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DASHBOARD";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Home_FormClosing);
             this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_setting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_addJob)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_notePad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_jobList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_profile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -315,17 +304,17 @@ namespace Todo_List_Framework
         private System.Windows.Forms.Label lbl_jobList;
         private System.Windows.Forms.PictureBox pb_addJob;
         private System.Windows.Forms.PictureBox pb_notePad;
-        private System.Windows.Forms.Label lbl_addJob;
+        private System.Windows.Forms.Label lbl_contact;
         private System.Windows.Forms.Label lbl_notePad;
         private System.Windows.Forms.PictureBox pb_setting;
         private System.Windows.Forms.Label lbl_setting;
         private System.Windows.Forms.PictureBox pb_logout;
         private System.Windows.Forms.Label lbl_lobout;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label lbl_profile_email;
         private System.Windows.Forms.Label lbl_profile_name;
         private System.Windows.Forms.PictureBox pb_profile;
+        private System.Windows.Forms.Panel mainPanel;
     }
 }
 

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Todo_List_Framework
+namespace Todo_List_Framework.ucPanel
 {
-    public partial class CloseWarning : Form
+    public partial class ucJobList : UserControl
     {
-        public CloseWarning()
+        public ucJobList()
         {
             InitializeComponent();
         }

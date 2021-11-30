@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Todo_List_Framework
+namespace Todo_List_Framework.ucPanel
 {
-    public partial class Addjob : Form
+    public partial class ucNotepad : UserControl
     {
-        public Addjob()
+        public ucNotepad()
         {
             InitializeComponent();
-        }
-
-        private void Addjob_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

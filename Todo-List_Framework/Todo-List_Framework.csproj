@@ -47,52 +47,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addjob.cs">
+    <Compile Include="MainFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Addjob.Designer.cs">
-      <DependentUpon>Addjob.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CloseWarning.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CloseWarning.Designer.cs">
-      <DependentUpon>CloseWarning.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
-    <Compile Include="JobList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="JobList.Designer.cs">
-      <DependentUpon>JobList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Notepad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Notepad.Designer.cs">
-      <DependentUpon>Notepad.cs</DependentUpon>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Addjob.resx">
-      <DependentUpon>Addjob.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CloseWarning.resx">
-      <DependentUpon>CloseWarning.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="JobList.resx">
-      <DependentUpon>JobList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Notepad.resx">
-      <DependentUpon>Notepad.cs</DependentUpon>
+    <Compile Include="ucPanel\ucContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucContact.Designer.cs">
+      <DependentUpon>ucContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPanel\ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucHome.Designer.cs">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPanel\ucJobList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucJobList.Designer.cs">
+      <DependentUpon>ucJobList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPanel\ucNotepad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucNotepad.Designer.cs">
+      <DependentUpon>ucNotepad.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +92,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucPanel\ucContact.resx">
+      <DependentUpon>ucContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucHome.resx">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucJobList.resx">
+      <DependentUpon>ucJobList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucNotepad.resx">
+      <DependentUpon>ucNotepad.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -137,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\health_test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
