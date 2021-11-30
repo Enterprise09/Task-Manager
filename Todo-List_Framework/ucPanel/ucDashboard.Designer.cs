@@ -1,7 +1,7 @@
 ﻿
 namespace Todo_List_Framework.ucPanel
 {
-    partial class ucHome
+    partial class ucDashboard
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.

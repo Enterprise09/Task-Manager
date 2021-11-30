@@ -8,7 +8,10 @@ D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.cspro
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.exe
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.pdb
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.MainFrame.resources
-D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucPanel.ucHome.resources
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucPanel.ucContact.resources
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucPanel.ucJobList.resources
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucPanel.ucNotepad.resources
+D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucPanel.ucDashboard.resources
+D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.SettingForm.resources
+D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.LoginForm.resources
+D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.RegisterForm.resources

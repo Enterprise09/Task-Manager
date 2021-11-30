@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Todo_List_Framework.ucPanel
+namespace Todo_List_Framework
 {
-    public partial class ucHome : UserControl
+    public partial class SettingForm : Form
     {
-        public ucHome()
+        public SettingForm()
         {
             InitializeComponent();
         }
