@@ -154,6 +154,7 @@ namespace Todo_List_Framework
             this.lbl_lobout.Size = new System.Drawing.Size(152, 44);
             this.lbl_lobout.TabIndex = 1;
             this.lbl_lobout.Text = "LOGOUT";
+            this.lbl_lobout.Click += new System.EventHandler(this.lbl_lobout_Click);
             // 
             // lbl_setting
             // 

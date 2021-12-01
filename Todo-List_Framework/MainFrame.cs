@@ -32,10 +32,10 @@ namespace Todo_List_Framework
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult result = MessageBox.Show(
-                "경고",
+                "종료",
                 "종료하시겠습니까?",
                 MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning
+                MessageBoxIcon.Information
                 );
             if (result == DialogResult.Yes)
             {
@@ -86,6 +86,21 @@ namespace Todo_List_Framework
         {
             SettingForm settingForm = new SettingForm();
             settingForm.ShowDialog();
+        }
+
+        private void lbl_lobout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "로그아웃", 
+                "로그아웃 하시겠습니까?", 
+                MessageBoxButtons.YesNo, 
+                MessageBoxIcon.Information);
+            if(result == DialogResult.Yes)
+            {
+                this.Hide();
+                (new LoginForm()).Show();
+                //this.Close();
+            }
         }
     }
 }

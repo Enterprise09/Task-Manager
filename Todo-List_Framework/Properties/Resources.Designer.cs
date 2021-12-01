@@ -73,6 +73,16 @@ namespace Todo_List_Framework.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap addJob_button {
+            get {
+                object obj = ResourceManager.GetObject("addJob_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap clipboard {
             get {
                 object obj = ResourceManager.GetObject("clipboard", resourceCulture);
@@ -136,6 +146,16 @@ namespace Todo_List_Framework.Properties {
         internal static System.Drawing.Bitmap logo_background {
             get {
                 object obj = ResourceManager.GetObject("logo_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_background1 {
+            get {
+                object obj = ResourceManager.GetObject("logo_background1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

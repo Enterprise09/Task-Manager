@@ -40,5 +40,11 @@ namespace Todo_List_Framework
                 return;
             }
         }
+
+        private void pb_register_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new LoginForm()).Show();
+        }
     }
 }

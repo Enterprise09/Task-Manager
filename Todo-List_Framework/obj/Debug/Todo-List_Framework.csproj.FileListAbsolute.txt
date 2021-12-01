@@ -15,3 +15,4 @@ D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucPan
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.SettingForm.resources
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.LoginForm.resources
 D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.RegisterForm.resources
+D:\Programming\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.AddJob.resources

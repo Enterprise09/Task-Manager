@@ -23,7 +23,7 @@ namespace Todo_List_Framework
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pb_login_Click(object sender, EventArgs e)
         {
             this.Hide();
             (new MainFrame()).Show();
@@ -54,6 +54,6 @@ namespace Todo_List_Framework
                 e.Cancel = true;
                 return;
             }
-        }
+        }        
     }
 }

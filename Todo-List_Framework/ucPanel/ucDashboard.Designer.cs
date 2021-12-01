@@ -29,27 +29,53 @@ namespace Todo_List_Framework.ucPanel
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
+            this.personal_chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.personal_chart)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MesloLGS NF", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(595, 407);
+            this.label1.Location = new System.Drawing.Point(1131, 386);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "HOME";
             // 
-            // ucHome
+            // personal_chart
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.personal_chart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.personal_chart.Legends.Add(legend1);
+            this.personal_chart.Location = new System.Drawing.Point(118, 206);
+            this.personal_chart.Name = "personal_chart";
+            this.personal_chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.personal_chart.Series.Add(series1);
+            this.personal_chart.Size = new System.Drawing.Size(600, 600);
+            this.personal_chart.TabIndex = 1;
+            this.personal_chart.Text = "chart1";
+            // 
+            // ucDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.personal_chart);
             this.Controls.Add(this.label1);
-            this.Name = "ucHome";
+            this.Name = "ucDashboard";
             this.Size = new System.Drawing.Size(1376, 941);
+            this.Load += new System.EventHandler(this.ucDashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.personal_chart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -58,5 +84,6 @@ namespace Todo_List_Framework.ucPanel
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart personal_chart;
     }
 }

@@ -16,5 +16,10 @@ namespace Todo_List_Framework.ucPanel
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            (new AddJob()).ShowDialog();
+        }
     }
 }

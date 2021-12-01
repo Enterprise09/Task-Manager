@@ -38,9 +38,9 @@ namespace Todo_List_Framework
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_register = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb_login = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_login)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -110,6 +110,7 @@ namespace Todo_List_Framework
             // lbl_register
             // 
             this.lbl_register.AutoSize = true;
+            this.lbl_register.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_register.Font = new System.Drawing.Font("MesloLGS NF", 13F);
             this.lbl_register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.lbl_register.Location = new System.Drawing.Point(383, 660);
@@ -128,15 +129,16 @@ namespace Todo_List_Framework
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // pb_login
             // 
-            this.pictureBox1.Image = global::Todo_List_Framework.Properties.Resources.login_button;
-            this.pictureBox1.Location = new System.Drawing.Point(345, 440);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pb_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_login.Image = global::Todo_List_Framework.Properties.Resources.login_button;
+            this.pb_login.Location = new System.Drawing.Point(345, 440);
+            this.pb_login.Name = "pb_login";
+            this.pb_login.Size = new System.Drawing.Size(50, 50);
+            this.pb_login.TabIndex = 2;
+            this.pb_login.TabStop = false;
+            this.pb_login.Click += new System.EventHandler(this.pb_login_Click);
             // 
             // LoginForm
             // 
@@ -147,7 +149,7 @@ namespace Todo_List_Framework
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbl_register);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_login);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -160,7 +162,7 @@ namespace Todo_List_Framework
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_login)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,7 +175,7 @@ namespace Todo_List_Framework
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_login;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_register;
         private System.Windows.Forms.PictureBox pictureBox2;
