@@ -31,16 +31,18 @@ namespace Todo_List_Framework
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddJob));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_from = new System.Windows.Forms.TextBox();
+            this.tb_endline = new System.Windows.Forms.TextBox();
+            this.tb_request = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cb_process = new System.Windows.Forms.CheckBox();
-            this.cb_notYet = new System.Windows.Forms.CheckBox();
-            this.cb_complete = new System.Windows.Forms.CheckBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.insertJob_button = new System.Windows.Forms.PictureBox();
+            this.state_group = new System.Windows.Forms.GroupBox();
+            this.rb_complete = new System.Windows.Forms.RadioButton();
+            this.rb_process = new System.Windows.Forms.RadioButton();
+            this.rb_notYet = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insertJob_button)).BeginInit();
+            this.state_group.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -54,30 +56,30 @@ namespace Todo_List_Framework
             this.label1.TabIndex = 0;
             this.label1.Text = "New Job";
             // 
-            // textBox1
+            // tb_from
             // 
-            this.textBox1.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(89, 176);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 38);
-            this.textBox1.TabIndex = 1;
+            this.tb_from.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_from.Location = new System.Drawing.Point(89, 176);
+            this.tb_from.Name = "tb_from";
+            this.tb_from.Size = new System.Drawing.Size(270, 38);
+            this.tb_from.TabIndex = 1;
             // 
-            // textBox2
+            // tb_endline
             // 
-            this.textBox2.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(89, 220);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 38);
-            this.textBox2.TabIndex = 1;
+            this.tb_endline.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_endline.Location = new System.Drawing.Point(89, 220);
+            this.tb_endline.Name = "tb_endline";
+            this.tb_endline.Size = new System.Drawing.Size(270, 38);
+            this.tb_endline.TabIndex = 1;
             // 
-            // textBox3
+            // tb_request
             // 
-            this.textBox3.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(89, 264);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 60);
-            this.textBox3.TabIndex = 1;
+            this.tb_request.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_request.Location = new System.Drawing.Point(89, 264);
+            this.tb_request.Multiline = true;
+            this.tb_request.Name = "tb_request";
+            this.tb_request.Size = new System.Drawing.Size(270, 60);
+            this.tb_request.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -88,48 +90,61 @@ namespace Todo_List_Framework
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // cb_process
+            // insertJob_button
             // 
-            this.cb_process.AutoSize = true;
-            this.cb_process.Font = new System.Drawing.Font("MesloLGS NF", 16F);
-            this.cb_process.Location = new System.Drawing.Point(237, 330);
-            this.cb_process.Name = "cb_process";
-            this.cb_process.Size = new System.Drawing.Size(122, 31);
-            this.cb_process.TabIndex = 3;
-            this.cb_process.Text = "process";
-            this.cb_process.UseVisualStyleBackColor = true;
+            this.insertJob_button.Image = global::Todo_List_Framework.Properties.Resources.login_button;
+            this.insertJob_button.Location = new System.Drawing.Point(309, 521);
+            this.insertJob_button.Name = "insertJob_button";
+            this.insertJob_button.Size = new System.Drawing.Size(50, 50);
+            this.insertJob_button.TabIndex = 4;
+            this.insertJob_button.TabStop = false;
+            this.insertJob_button.Click += new System.EventHandler(this.insertJob_button_Click);
             // 
-            // cb_notYet
+            // state_group
             // 
-            this.cb_notYet.AutoSize = true;
-            this.cb_notYet.Font = new System.Drawing.Font("MesloLGS NF", 16F);
-            this.cb_notYet.Location = new System.Drawing.Point(237, 367);
-            this.cb_notYet.Name = "cb_notYet";
-            this.cb_notYet.Size = new System.Drawing.Size(122, 31);
-            this.cb_notYet.TabIndex = 3;
-            this.cb_notYet.Text = "not yet";
-            this.cb_notYet.UseVisualStyleBackColor = true;
+            this.state_group.Controls.Add(this.rb_complete);
+            this.state_group.Controls.Add(this.rb_process);
+            this.state_group.Controls.Add(this.rb_notYet);
+            this.state_group.Font = new System.Drawing.Font("MesloLGS NF", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.state_group.Location = new System.Drawing.Point(198, 330);
+            this.state_group.Name = "state_group";
+            this.state_group.Size = new System.Drawing.Size(161, 153);
+            this.state_group.TabIndex = 5;
+            this.state_group.TabStop = false;
+            this.state_group.Text = "state";
             // 
-            // cb_complete
+            // rb_complete
             // 
-            this.cb_complete.AutoSize = true;
-            this.cb_complete.Font = new System.Drawing.Font("MesloLGS NF", 16F);
-            this.cb_complete.Location = new System.Drawing.Point(237, 404);
-            this.cb_complete.Name = "cb_complete";
-            this.cb_complete.Size = new System.Drawing.Size(135, 31);
-            this.cb_complete.TabIndex = 3;
-            this.cb_complete.Text = "complete";
-            this.cb_complete.UseVisualStyleBackColor = true;
+            this.rb_complete.AutoSize = true;
+            this.rb_complete.Location = new System.Drawing.Point(24, 104);
+            this.rb_complete.Name = "rb_complete";
+            this.rb_complete.Size = new System.Drawing.Size(116, 28);
+            this.rb_complete.TabIndex = 4;
+            this.rb_complete.TabStop = true;
+            this.rb_complete.Text = "complete";
+            this.rb_complete.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // rb_process
             // 
-            this.pictureBox2.Image = global::Todo_List_Framework.Properties.Resources.login_button;
-            this.pictureBox2.Location = new System.Drawing.Point(316, 522);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.rb_process.AutoSize = true;
+            this.rb_process.Location = new System.Drawing.Point(24, 70);
+            this.rb_process.Name = "rb_process";
+            this.rb_process.Size = new System.Drawing.Size(105, 28);
+            this.rb_process.TabIndex = 4;
+            this.rb_process.TabStop = true;
+            this.rb_process.Text = "process";
+            this.rb_process.UseVisualStyleBackColor = true;
+            // 
+            // rb_notYet
+            // 
+            this.rb_notYet.AutoSize = true;
+            this.rb_notYet.Location = new System.Drawing.Point(24, 36);
+            this.rb_notYet.Name = "rb_notYet";
+            this.rb_notYet.Size = new System.Drawing.Size(105, 28);
+            this.rb_notYet.TabIndex = 4;
+            this.rb_notYet.TabStop = true;
+            this.rb_notYet.Text = "not yet";
+            this.rb_notYet.UseVisualStyleBackColor = true;
             // 
             // AddJob
             // 
@@ -137,14 +152,12 @@ namespace Todo_List_Framework
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(450, 700);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.cb_complete);
-            this.Controls.Add(this.cb_notYet);
-            this.Controls.Add(this.cb_process);
+            this.Controls.Add(this.state_group);
+            this.Controls.Add(this.insertJob_button);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_request);
+            this.Controls.Add(this.tb_endline);
+            this.Controls.Add(this.tb_from);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -153,7 +166,9 @@ namespace Todo_List_Framework
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddJob_FormClosing);
             this.Load += new System.EventHandler(this.AddJob_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insertJob_button)).EndInit();
+            this.state_group.ResumeLayout(false);
+            this.state_group.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,13 +177,14 @@ namespace Todo_List_Framework
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_from;
+        private System.Windows.Forms.TextBox tb_endline;
+        private System.Windows.Forms.TextBox tb_request;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox cb_process;
-        private System.Windows.Forms.CheckBox cb_notYet;
-        private System.Windows.Forms.CheckBox cb_complete;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox insertJob_button;
+        private System.Windows.Forms.GroupBox state_group;
+        private System.Windows.Forms.RadioButton rb_complete;
+        private System.Windows.Forms.RadioButton rb_process;
+        private System.Windows.Forms.RadioButton rb_notYet;
     }
 }
