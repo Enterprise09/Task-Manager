@@ -34,11 +34,12 @@ namespace Todo_List_Framework
             this.pb_register = new System.Windows.Forms.PictureBox();
             this.lbl_welcome = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_password = new System.Windows.Forms.TextBox();
+            this.tb_checkpw = new System.Windows.Forms.TextBox();
+            this.tb_phone = new System.Windows.Forms.TextBox();
+            this.tb_age = new System.Windows.Forms.TextBox();
+            this.tb_gender = new System.Windows.Forms.TextBox();
+            this.tb_job = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_register)).BeginInit();
             this.SuspendLayout();
@@ -78,55 +79,92 @@ namespace Todo_List_Framework
             // 
             this.tb_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_id.Font = new System.Drawing.Font("MesloLGS NF", 20F);
+            this.tb_id.ForeColor = System.Drawing.Color.Silver;
             this.tb_id.Location = new System.Drawing.Point(115, 142);
             this.tb_id.Name = "tb_id";
             this.tb_id.Size = new System.Drawing.Size(270, 41);
             this.tb_id.TabIndex = 3;
+            this.tb_id.Text = "id or email";
+            this.tb_id.Enter += new System.EventHandler(this.tb_id_Enter);
+            this.tb_id.Leave += new System.EventHandler(this.tb_id_Leave);
             // 
-            // textBox1
+            // tb_password
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
-            this.textBox1.Font = new System.Drawing.Font("MesloLGS NF", 20F);
-            this.textBox1.Location = new System.Drawing.Point(115, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 41);
-            this.textBox1.TabIndex = 3;
+            this.tb_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_password.Font = new System.Drawing.Font("MesloLGS NF", 20F);
+            this.tb_password.ForeColor = System.Drawing.Color.Silver;
+            this.tb_password.Location = new System.Drawing.Point(115, 189);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(270, 41);
+            this.tb_password.TabIndex = 3;
+            this.tb_password.Text = "password";
+            this.tb_password.Enter += new System.EventHandler(this.tb_password_Enter);
+            this.tb_password.Leave += new System.EventHandler(this.tb_password_Leave);
             // 
-            // textBox2
+            // tb_checkpw
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
-            this.textBox2.Font = new System.Drawing.Font("MesloLGS NF", 20F);
-            this.textBox2.Location = new System.Drawing.Point(115, 236);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 41);
-            this.textBox2.TabIndex = 3;
+            this.tb_checkpw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_checkpw.Font = new System.Drawing.Font("MesloLGS NF", 20F);
+            this.tb_checkpw.ForeColor = System.Drawing.Color.Silver;
+            this.tb_checkpw.Location = new System.Drawing.Point(115, 236);
+            this.tb_checkpw.Name = "tb_checkpw";
+            this.tb_checkpw.Size = new System.Drawing.Size(270, 41);
+            this.tb_checkpw.TabIndex = 3;
+            this.tb_checkpw.Text = "check password";
+            this.tb_checkpw.Enter += new System.EventHandler(this.tb_checkpw_Enter);
+            this.tb_checkpw.Leave += new System.EventHandler(this.tb_checkpw_Leave);
             // 
-            // textBox3
+            // tb_phone
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
-            this.textBox3.Font = new System.Drawing.Font("MesloLGS NF", 20F);
-            this.textBox3.Location = new System.Drawing.Point(115, 305);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 41);
-            this.textBox3.TabIndex = 3;
+            this.tb_phone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_phone.Font = new System.Drawing.Font("MesloLGS NF", 20F);
+            this.tb_phone.ForeColor = System.Drawing.Color.Silver;
+            this.tb_phone.Location = new System.Drawing.Point(115, 305);
+            this.tb_phone.Name = "tb_phone";
+            this.tb_phone.Size = new System.Drawing.Size(270, 41);
+            this.tb_phone.TabIndex = 3;
+            this.tb_phone.Text = "phone number";
+            this.tb_phone.Enter += new System.EventHandler(this.tb_phone_Enter);
+            this.tb_phone.Leave += new System.EventHandler(this.tb_phone_Leave);
             // 
-            // textBox4
+            // tb_age
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
-            this.textBox4.Font = new System.Drawing.Font("MesloLGS NF", 20F);
-            this.textBox4.Location = new System.Drawing.Point(115, 354);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(270, 41);
-            this.textBox4.TabIndex = 3;
+            this.tb_age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_age.Font = new System.Drawing.Font("MesloLGS NF", 20F);
+            this.tb_age.ForeColor = System.Drawing.Color.Silver;
+            this.tb_age.Location = new System.Drawing.Point(115, 354);
+            this.tb_age.Name = "tb_age";
+            this.tb_age.Size = new System.Drawing.Size(270, 41);
+            this.tb_age.TabIndex = 3;
+            this.tb_age.Text = "age";
+            this.tb_age.Enter += new System.EventHandler(this.tb_age_Enter);
+            this.tb_age.Leave += new System.EventHandler(this.tb_age_Leave);
             // 
-            // textBox5
+            // tb_gender
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
-            this.textBox5.Font = new System.Drawing.Font("MesloLGS NF", 20F);
-            this.textBox5.Location = new System.Drawing.Point(115, 401);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(270, 41);
-            this.textBox5.TabIndex = 3;
+            this.tb_gender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_gender.Font = new System.Drawing.Font("MesloLGS NF", 20F);
+            this.tb_gender.ForeColor = System.Drawing.Color.Silver;
+            this.tb_gender.Location = new System.Drawing.Point(115, 401);
+            this.tb_gender.Name = "tb_gender";
+            this.tb_gender.Size = new System.Drawing.Size(270, 41);
+            this.tb_gender.TabIndex = 3;
+            this.tb_gender.Text = "gender";
+            this.tb_gender.Enter += new System.EventHandler(this.tb_gender_Enter);
+            this.tb_gender.Leave += new System.EventHandler(this.tb_gender_Leave);
+            // 
+            // tb_job
+            // 
+            this.tb_job.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_job.Font = new System.Drawing.Font("MesloLGS NF", 20F);
+            this.tb_job.ForeColor = System.Drawing.Color.Silver;
+            this.tb_job.Location = new System.Drawing.Point(115, 448);
+            this.tb_job.Name = "tb_job";
+            this.tb_job.Size = new System.Drawing.Size(270, 41);
+            this.tb_job.TabIndex = 3;
+            this.tb_job.Text = "job";
+            this.tb_job.Enter += new System.EventHandler(this.tb_job_Enter);
+            this.tb_job.Leave += new System.EventHandler(this.tb_job_Leave);
             // 
             // RegisterForm
             // 
@@ -134,11 +172,12 @@ namespace Todo_List_Framework
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(500, 700);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tb_job);
+            this.Controls.Add(this.tb_gender);
+            this.Controls.Add(this.tb_checkpw);
+            this.Controls.Add(this.tb_age);
+            this.Controls.Add(this.tb_password);
+            this.Controls.Add(this.tb_phone);
             this.Controls.Add(this.tb_id);
             this.Controls.Add(this.lbl_welcome);
             this.Controls.Add(this.pb_register);
@@ -162,10 +201,11 @@ namespace Todo_List_Framework
         private System.Windows.Forms.PictureBox pb_register;
         private System.Windows.Forms.Label lbl_welcome;
         private System.Windows.Forms.TextBox tb_id;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_password;
+        private System.Windows.Forms.TextBox tb_checkpw;
+        private System.Windows.Forms.TextBox tb_phone;
+        private System.Windows.Forms.TextBox tb_age;
+        private System.Windows.Forms.TextBox tb_gender;
+        private System.Windows.Forms.TextBox tb_job;
     }
 }

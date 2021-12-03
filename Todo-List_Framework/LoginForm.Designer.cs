@@ -33,8 +33,8 @@ namespace Todo_List_Framework
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_login_id = new System.Windows.Forms.TextBox();
+            this.tb_login_pw = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_register = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -76,25 +76,34 @@ namespace Todo_List_Framework
             this.label3.TabIndex = 0;
             this.label3.Text = "Task-Board";
             // 
-            // textBox1
+            // tb_login_id
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
-            this.textBox1.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(115, 315);
-            this.textBox1.MaxLength = 30;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 38);
-            this.textBox1.TabIndex = 1;
+            this.tb_login_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_login_id.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_login_id.ForeColor = System.Drawing.Color.Silver;
+            this.tb_login_id.Location = new System.Drawing.Point(115, 315);
+            this.tb_login_id.MaxLength = 20;
+            this.tb_login_id.Name = "tb_login_id";
+            this.tb_login_id.Size = new System.Drawing.Size(270, 38);
+            this.tb_login_id.TabIndex = 1;
+            this.tb_login_id.TabStop = false;
+            this.tb_login_id.Text = "id or email";
+            this.tb_login_id.Enter += new System.EventHandler(this.tb_login_id_Enter);
+            this.tb_login_id.Leave += new System.EventHandler(this.tb_login_id_Leave);
             // 
-            // textBox2
+            // tb_login_pw
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
-            this.textBox2.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(115, 365);
-            this.textBox2.MaxLength = 30;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 38);
-            this.textBox2.TabIndex = 1;
+            this.tb_login_pw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.tb_login_pw.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_login_pw.ForeColor = System.Drawing.Color.Silver;
+            this.tb_login_pw.Location = new System.Drawing.Point(115, 365);
+            this.tb_login_pw.MaxLength = 20;
+            this.tb_login_pw.Name = "tb_login_pw";
+            this.tb_login_pw.Size = new System.Drawing.Size(270, 38);
+            this.tb_login_pw.TabIndex = 1;
+            this.tb_login_pw.Text = "password";
+            this.tb_login_pw.Enter += new System.EventHandler(this.tb_login_pw_Enter);
+            this.tb_login_pw.Leave += new System.EventHandler(this.tb_login_pw_Leave);
             // 
             // label4
             // 
@@ -150,8 +159,8 @@ namespace Todo_List_Framework
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbl_register);
             this.Controls.Add(this.pb_login);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_login_pw);
+            this.Controls.Add(this.tb_login_id);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -173,8 +182,8 @@ namespace Todo_List_Framework
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_login_id;
+        private System.Windows.Forms.TextBox tb_login_pw;
         private System.Windows.Forms.PictureBox pb_login;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_register;
