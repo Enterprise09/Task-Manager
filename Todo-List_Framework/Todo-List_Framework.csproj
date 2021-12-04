@@ -118,11 +118,11 @@
     <Compile Include="ucPanel\ucNotepad.Designer.cs">
       <DependentUpon>ucNotepad.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucView\ucJobViewer.cs">
+    <Compile Include="ucView\JobView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucView\ucJobViewer.Designer.cs">
-      <DependentUpon>ucJobViewer.cs</DependentUpon>
+    <Compile Include="ucView\JobView.Designer.cs">
+      <DependentUpon>JobView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddContactForm.resx">
       <DependentUpon>AddContactForm.cs</DependentUpon>
@@ -167,8 +167,8 @@
     <EmbeddedResource Include="ucPanel\ucNotepad.resx">
       <DependentUpon>ucNotepad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucView\ucJobViewer.resx">
-      <DependentUpon>ucJobViewer.cs</DependentUpon>
+    <EmbeddedResource Include="ucView\JobView.resx">
+      <DependentUpon>JobView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -228,5 +228,6 @@
   <ItemGroup>
     <None Include="Resources\logo_background2.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
