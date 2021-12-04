@@ -27,25 +27,6 @@ namespace Todo_List_Framework
             this.ActiveControl = lbl_welcome;
         }
 
-        private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult result = MessageBox.Show(
-                "경고",
-                "종료하시겠습니까?",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning
-                );
-            if(result == DialogResult.Yes)
-            {
-                Application.ExitThread();
-            }
-            else
-            {
-                e.Cancel = true;
-                return;
-            }
-        }
-
         private void pb_register_Click(object sender, EventArgs e)
         {
             if (tb_password.Text.Equals(tb_checkpw.Text))
@@ -64,7 +45,7 @@ namespace Todo_List_Framework
                 if(result == 1)
                 {
                     MessageBox.Show("회원가입", "회원가입에 성공하였습니다.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
+                    this.Close();
                     (new LoginForm()).Show();
                 }
                 else
@@ -205,6 +186,11 @@ namespace Todo_List_Framework
                 tb_job.Text = "job";
                 tb_job.ForeColor = Color.Silver;
             }
+        }
+
+        private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

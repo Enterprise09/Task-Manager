@@ -29,50 +29,35 @@ namespace Todo_List_Framework.ucPanel
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pb_addJob = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_addJob)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // pb_addJob
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MesloLGS NF", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(385, 342);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 61);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "JOB LIST";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Todo_List_Framework.Properties.Resources.addJob_button;
-            this.pictureBox1.Location = new System.Drawing.Point(1264, 840);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pb_addJob.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_addJob.Image = global::Todo_List_Framework.Properties.Resources.addJob_button;
+            this.pb_addJob.Location = new System.Drawing.Point(1264, 840);
+            this.pb_addJob.Name = "pb_addJob";
+            this.pb_addJob.Size = new System.Drawing.Size(70, 70);
+            this.pb_addJob.TabIndex = 1;
+            this.pb_addJob.TabStop = false;
+            this.pb_addJob.Click += new System.EventHandler(this.pb_addJob_Click);
             // 
             // ucJobList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pb_addJob);
             this.Name = "ucJobList";
             this.Size = new System.Drawing.Size(1376, 941);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_addJob)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_addJob;
     }
 }

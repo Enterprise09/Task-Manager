@@ -20,7 +20,6 @@ D:\Programing\Todo-List\Todo-List_Framework\bin\Debug\Todo-List_Framework.exe.co
 D:\Programing\Todo-List\Todo-List_Framework\bin\Debug\Todo-List_Framework.exe
 D:\Programing\Todo-List\Todo-List_Framework\bin\Debug\Todo-List_Framework.pdb
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.csproj.AssemblyReference.cache
-D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.AddJob.resources
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.LoginForm.resources
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.MainFrame.resources
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.Properties.Resources.resources
@@ -34,3 +33,6 @@ D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.csproj
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.csproj.CoreCompileInputs.cache
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.exe
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo-List_Framework.pdb
+D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.AddJobForm.resources
+D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.AddNoteForm.resources
+D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.AddContactForm.resources

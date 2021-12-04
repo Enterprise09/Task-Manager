@@ -50,11 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddJob.cs">
+    <Compile Include="AddContactForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddJob.Designer.cs">
-      <DependentUpon>AddJob.cs</DependentUpon>
+    <Compile Include="AddContactForm.Designer.cs">
+      <DependentUpon>AddContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJobForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJobForm.Designer.cs">
+      <DependentUpon>AddJobForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNoteForm.Designer.cs">
+      <DependentUpon>AddNoteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -106,8 +118,20 @@
     <Compile Include="ucPanel\ucNotepad.Designer.cs">
       <DependentUpon>ucNotepad.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddJob.resx">
-      <DependentUpon>AddJob.cs</DependentUpon>
+    <Compile Include="ucView\ucJobViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucView\ucJobViewer.Designer.cs">
+      <DependentUpon>ucJobViewer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddContactForm.resx">
+      <DependentUpon>AddContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJobForm.resx">
+      <DependentUpon>AddJobForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNoteForm.resx">
+      <DependentUpon>AddNoteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -142,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucPanel\ucNotepad.resx">
       <DependentUpon>ucNotepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucView\ucJobViewer.resx">
+      <DependentUpon>ucJobViewer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -191,6 +218,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\addJob_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_background2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

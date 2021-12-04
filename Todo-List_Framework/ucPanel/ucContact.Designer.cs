@@ -30,6 +30,8 @@ namespace Todo_List_Framework.ucPanel
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.pb_addContact = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_addContact)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -42,14 +44,27 @@ namespace Todo_List_Framework.ucPanel
             this.label1.TabIndex = 0;
             this.label1.Text = "Contact";
             // 
+            // pb_addContact
+            // 
+            this.pb_addContact.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_addContact.Image = global::Todo_List_Framework.Properties.Resources.addJob_button;
+            this.pb_addContact.Location = new System.Drawing.Point(1264, 840);
+            this.pb_addContact.Name = "pb_addContact";
+            this.pb_addContact.Size = new System.Drawing.Size(70, 70);
+            this.pb_addContact.TabIndex = 1;
+            this.pb_addContact.TabStop = false;
+            this.pb_addContact.Click += new System.EventHandler(this.pb_addContact_Click);
+            // 
             // ucContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.pb_addContact);
             this.Controls.Add(this.label1);
             this.Name = "ucContact";
             this.Size = new System.Drawing.Size(1376, 941);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_addContact)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -58,5 +73,6 @@ namespace Todo_List_Framework.ucPanel
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pb_addContact;
     }
 }

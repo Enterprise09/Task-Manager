@@ -16,5 +16,10 @@ namespace Todo_List_Framework.ucPanel
         {
             InitializeComponent();
         }
+
+        private void pb_AddNote_Click(object sender, EventArgs e)
+        {
+            (new AddNoteForm()).Show();
+        }
     }
 }

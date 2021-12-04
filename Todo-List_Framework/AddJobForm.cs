@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Todo_List_Framework
 {
-    public partial class AddJob : Form
+    public partial class AddJobForm : Form
     {
-        public AddJob()
+        public AddJobForm()
         {
             InitializeComponent();
         }
@@ -25,12 +25,7 @@ namespace Todo_List_Framework
 
         private void AddJob_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void AddJob_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
+            this.ActiveControl = lbl_jobTitle;
         }
 
         private void insertJob_button_Click(object sender, EventArgs e)
@@ -59,17 +54,70 @@ namespace Todo_List_Framework
 
             if(result == 1)
             {
-                MessageBox.Show("성공", "새로운 일을 추가하였습니다.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("새로운 일을 추가하였습니다.", "성공", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 (new LoginForm()).Show();
                 //this.Close();
             }
             else
             {
-                MessageBox.Show("오류", "오류가 발생하였습니다.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("오류가 발생하였습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }            
 
             
+        }
+
+        private void tb_from_Enter(object sender, EventArgs e)
+        {
+            if(tb_from.Text == "From")
+            {
+                tb_from.Text = "";
+            }
+        }
+
+        private void tb_from_Leave(object sender, EventArgs e)
+        {
+            if(tb_from.Text == "")
+            {
+                tb_from.Text = "From";
+            }
+        }
+
+        private void tb_endline_Enter(object sender, EventArgs e)
+        {
+            if (tb_from.Text == "End Line")
+            {
+                tb_from.Text = "";
+            }
+        }
+
+        private void tb_endline_Leave(object sender, EventArgs e)
+        {
+            if (tb_from.Text == "")
+            {
+                tb_from.Text = "End Line";
+            }
+        }
+
+        private void tb_request_Enter(object sender, EventArgs e)
+        {
+            if (tb_from.Text == "Request")
+            {
+                tb_from.Text = "";
+            }
+        }
+
+        private void tb_request_Leave(object sender, EventArgs e)
+        {
+            if (tb_from.Text == "")
+            {
+                tb_from.Text = "Request";
+            }
+        }
+
+        private void AddJob_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

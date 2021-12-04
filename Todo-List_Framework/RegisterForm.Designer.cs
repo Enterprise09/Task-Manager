@@ -30,8 +30,6 @@ namespace Todo_List_Framework
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pb_register = new System.Windows.Forms.PictureBox();
             this.lbl_welcome = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.tb_password = new System.Windows.Forms.TextBox();
@@ -40,36 +38,18 @@ namespace Todo_List_Framework
             this.tb_age = new System.Windows.Forms.TextBox();
             this.tb_gender = new System.Windows.Forms.TextBox();
             this.tb_job = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pb_register = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_register)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Todo_List_Framework.Properties.Resources.logo_background;
-            this.pictureBox1.Location = new System.Drawing.Point(-52, 501);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(287, 273);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pb_register
-            // 
-            this.pb_register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_register.Image = global::Todo_List_Framework.Properties.Resources.login_button;
-            this.pb_register.Location = new System.Drawing.Point(335, 504);
-            this.pb_register.Name = "pb_register";
-            this.pb_register.Size = new System.Drawing.Size(50, 50);
-            this.pb_register.TabIndex = 1;
-            this.pb_register.TabStop = false;
-            this.pb_register.Click += new System.EventHandler(this.pb_register_Click);
             // 
             // lbl_welcome
             // 
             this.lbl_welcome.AutoSize = true;
             this.lbl_welcome.Font = new System.Drawing.Font("MesloLGS NF", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.lbl_welcome.Location = new System.Drawing.Point(117, 46);
+            this.lbl_welcome.Location = new System.Drawing.Point(92, 47);
             this.lbl_welcome.Name = "lbl_welcome";
             this.lbl_welcome.Size = new System.Drawing.Size(267, 61);
             this.lbl_welcome.TabIndex = 2;
@@ -80,7 +60,7 @@ namespace Todo_List_Framework
             this.tb_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_id.Font = new System.Drawing.Font("MesloLGS NF", 20F);
             this.tb_id.ForeColor = System.Drawing.Color.Silver;
-            this.tb_id.Location = new System.Drawing.Point(115, 142);
+            this.tb_id.Location = new System.Drawing.Point(90, 134);
             this.tb_id.Name = "tb_id";
             this.tb_id.Size = new System.Drawing.Size(270, 41);
             this.tb_id.TabIndex = 3;
@@ -93,7 +73,7 @@ namespace Todo_List_Framework
             this.tb_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_password.Font = new System.Drawing.Font("MesloLGS NF", 20F);
             this.tb_password.ForeColor = System.Drawing.Color.Silver;
-            this.tb_password.Location = new System.Drawing.Point(115, 189);
+            this.tb_password.Location = new System.Drawing.Point(90, 181);
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(270, 41);
             this.tb_password.TabIndex = 3;
@@ -106,7 +86,7 @@ namespace Todo_List_Framework
             this.tb_checkpw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_checkpw.Font = new System.Drawing.Font("MesloLGS NF", 20F);
             this.tb_checkpw.ForeColor = System.Drawing.Color.Silver;
-            this.tb_checkpw.Location = new System.Drawing.Point(115, 236);
+            this.tb_checkpw.Location = new System.Drawing.Point(90, 228);
             this.tb_checkpw.Name = "tb_checkpw";
             this.tb_checkpw.Size = new System.Drawing.Size(270, 41);
             this.tb_checkpw.TabIndex = 3;
@@ -119,7 +99,7 @@ namespace Todo_List_Framework
             this.tb_phone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_phone.Font = new System.Drawing.Font("MesloLGS NF", 20F);
             this.tb_phone.ForeColor = System.Drawing.Color.Silver;
-            this.tb_phone.Location = new System.Drawing.Point(115, 305);
+            this.tb_phone.Location = new System.Drawing.Point(90, 291);
             this.tb_phone.Name = "tb_phone";
             this.tb_phone.Size = new System.Drawing.Size(270, 41);
             this.tb_phone.TabIndex = 3;
@@ -132,7 +112,7 @@ namespace Todo_List_Framework
             this.tb_age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_age.Font = new System.Drawing.Font("MesloLGS NF", 20F);
             this.tb_age.ForeColor = System.Drawing.Color.Silver;
-            this.tb_age.Location = new System.Drawing.Point(115, 354);
+            this.tb_age.Location = new System.Drawing.Point(90, 340);
             this.tb_age.Name = "tb_age";
             this.tb_age.Size = new System.Drawing.Size(270, 41);
             this.tb_age.TabIndex = 3;
@@ -145,7 +125,7 @@ namespace Todo_List_Framework
             this.tb_gender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_gender.Font = new System.Drawing.Font("MesloLGS NF", 20F);
             this.tb_gender.ForeColor = System.Drawing.Color.Silver;
-            this.tb_gender.Location = new System.Drawing.Point(115, 401);
+            this.tb_gender.Location = new System.Drawing.Point(90, 387);
             this.tb_gender.Name = "tb_gender";
             this.tb_gender.Size = new System.Drawing.Size(270, 41);
             this.tb_gender.TabIndex = 3;
@@ -158,7 +138,7 @@ namespace Todo_List_Framework
             this.tb_job.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_job.Font = new System.Drawing.Font("MesloLGS NF", 20F);
             this.tb_job.ForeColor = System.Drawing.Color.Silver;
-            this.tb_job.Location = new System.Drawing.Point(115, 448);
+            this.tb_job.Location = new System.Drawing.Point(90, 434);
             this.tb_job.Name = "tb_job";
             this.tb_job.Size = new System.Drawing.Size(270, 41);
             this.tb_job.TabIndex = 3;
@@ -166,12 +146,32 @@ namespace Todo_List_Framework
             this.tb_job.Enter += new System.EventHandler(this.tb_job_Enter);
             this.tb_job.Leave += new System.EventHandler(this.tb_job_Leave);
             // 
+            // pb_register
+            // 
+            this.pb_register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_register.Image = global::Todo_List_Framework.Properties.Resources.login_button;
+            this.pb_register.Location = new System.Drawing.Point(335, 504);
+            this.pb_register.Name = "pb_register";
+            this.pb_register.Size = new System.Drawing.Size(50, 50);
+            this.pb_register.TabIndex = 1;
+            this.pb_register.TabStop = false;
+            this.pb_register.Click += new System.EventHandler(this.pb_register_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Todo_List_Framework.Properties.Resources.logo_background;
+            this.pictureBox1.Location = new System.Drawing.Point(-52, 501);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(287, 273);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(500, 700);
+            this.ClientSize = new System.Drawing.Size(450, 700);
             this.Controls.Add(this.tb_job);
             this.Controls.Add(this.tb_gender);
             this.Controls.Add(this.tb_checkpw);
@@ -188,8 +188,8 @@ namespace Todo_List_Framework
             this.Text = "Register";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegisterForm_FormClosing);
             this.Load += new System.EventHandler(this.RegisterForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_register)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

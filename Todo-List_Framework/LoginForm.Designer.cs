@@ -48,7 +48,7 @@ namespace Todo_List_Framework
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MesloLGS NF", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.label1.Location = new System.Drawing.Point(42, 80);
+            this.label1.Location = new System.Drawing.Point(41, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 21);
             this.label1.TabIndex = 0;
@@ -59,29 +59,29 @@ namespace Todo_List_Framework
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MesloLGS NF", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.label2.Location = new System.Drawing.Point(121, 187);
+            this.label2.Location = new System.Drawing.Point(173, 223);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(370, 42);
+            this.label2.Size = new System.Drawing.Size(250, 42);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Get some important thing that manage\r\nyour own loutine and get some break!";
+            this.label2.Text = "manage your own loutine \r\nand get some break!";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MesloLGS NF", 38F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.label3.Location = new System.Drawing.Point(82, 109);
+            this.label3.Location = new System.Drawing.Point(87, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(338, 65);
+            this.label3.Size = new System.Drawing.Size(276, 130);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Task-Board";
+            this.label3.Text = "Task\r\n Manager";
             // 
             // tb_login_id
             // 
             this.tb_login_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_login_id.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_login_id.ForeColor = System.Drawing.Color.Silver;
-            this.tb_login_id.Location = new System.Drawing.Point(115, 315);
+            this.tb_login_id.Location = new System.Drawing.Point(90, 330);
             this.tb_login_id.MaxLength = 20;
             this.tb_login_id.Name = "tb_login_id";
             this.tb_login_id.Size = new System.Drawing.Size(270, 38);
@@ -96,7 +96,7 @@ namespace Todo_List_Framework
             this.tb_login_pw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.tb_login_pw.Font = new System.Drawing.Font("MesloLGS NF", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_login_pw.ForeColor = System.Drawing.Color.Silver;
-            this.tb_login_pw.Location = new System.Drawing.Point(115, 365);
+            this.tb_login_pw.Location = new System.Drawing.Point(90, 374);
             this.tb_login_pw.MaxLength = 20;
             this.tb_login_pw.Name = "tb_login_pw";
             this.tb_login_pw.Size = new System.Drawing.Size(270, 38);
@@ -110,7 +110,7 @@ namespace Todo_List_Framework
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MesloLGS NF", 12F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.label4.Location = new System.Drawing.Point(167, 661);
+            this.label4.Location = new System.Drawing.Point(12, 670);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(210, 21);
             this.label4.TabIndex = 3;
@@ -122,7 +122,7 @@ namespace Todo_List_Framework
             this.lbl_register.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_register.Font = new System.Drawing.Font("MesloLGS NF", 13F);
             this.lbl_register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.lbl_register.Location = new System.Drawing.Point(383, 660);
+            this.lbl_register.Location = new System.Drawing.Point(228, 669);
             this.lbl_register.Name = "lbl_register";
             this.lbl_register.Size = new System.Drawing.Size(98, 23);
             this.lbl_register.TabIndex = 3;
@@ -142,7 +142,7 @@ namespace Todo_List_Framework
             // 
             this.pb_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_login.Image = global::Todo_List_Framework.Properties.Resources.login_button;
-            this.pb_login.Location = new System.Drawing.Point(345, 440);
+            this.pb_login.Location = new System.Drawing.Point(330, 459);
             this.pb_login.Name = "pb_login";
             this.pb_login.Size = new System.Drawing.Size(50, 50);
             this.pb_login.TabIndex = 2;
@@ -154,10 +154,10 @@ namespace Todo_List_Framework
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(500, 700);
+            this.ClientSize = new System.Drawing.Size(450, 700);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbl_register);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pb_login);
             this.Controls.Add(this.tb_login_pw);
             this.Controls.Add(this.tb_login_id);

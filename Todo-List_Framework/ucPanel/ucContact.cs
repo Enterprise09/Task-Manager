@@ -16,5 +16,10 @@ namespace Todo_List_Framework.ucPanel
         {
             InitializeComponent();
         }
+
+        private void pb_addContact_Click(object sender, EventArgs e)
+        {
+            (new AddContactForm()).Show();
+        }
     }
 }
