@@ -126,7 +126,7 @@ namespace Todo_List_Framework.ucView
             this.lbl_from.Name = "lbl_from";
             this.lbl_from.Size = new System.Drawing.Size(97, 37);
             this.lbl_from.TabIndex = 3;
-            this.lbl_from.Text = "End To";
+            this.lbl_from.Text = "From";
             this.lbl_from.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_endLine
@@ -173,11 +173,11 @@ namespace Todo_List_Framework.ucView
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbl_request;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lbl_from;
-        private System.Windows.Forms.Label lbl_endLine;
-        private System.Windows.Forms.Label lbl_state_img;
+        internal System.Windows.Forms.Label lbl_from;
+        internal System.Windows.Forms.Label lbl_endLine;
+        internal System.Windows.Forms.Label lbl_state_img;
+        internal System.Windows.Forms.Label lbl_request;
     }
 }

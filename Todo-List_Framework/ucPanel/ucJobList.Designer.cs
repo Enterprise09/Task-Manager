@@ -30,11 +30,13 @@ namespace Todo_List_Framework.ucPanel
         private void InitializeComponent()
         {
             this.pb_addJob = new System.Windows.Forms.PictureBox();
+            this.mainTree = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_addJob)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_addJob
             // 
+            this.pb_addJob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.pb_addJob.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_addJob.Image = global::Todo_List_Framework.Properties.Resources.addJob_button;
             this.pb_addJob.Location = new System.Drawing.Point(1264, 840);
@@ -44,14 +46,25 @@ namespace Todo_List_Framework.ucPanel
             this.pb_addJob.TabStop = false;
             this.pb_addJob.Click += new System.EventHandler(this.pb_addJob_Click);
             // 
+            // mainTree
+            // 
+            this.mainTree.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainTree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainTree.Location = new System.Drawing.Point(42, 456);
+            this.mainTree.Name = "mainTree";
+            this.mainTree.Size = new System.Drawing.Size(1300, 2);
+            this.mainTree.TabIndex = 2;
+            // 
             // ucJobList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.mainTree);
             this.Controls.Add(this.pb_addJob);
             this.Name = "ucJobList";
             this.Size = new System.Drawing.Size(1376, 941);
+            this.Load += new System.EventHandler(this.ucJobList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_addJob)).EndInit();
             this.ResumeLayout(false);
 
@@ -59,5 +72,6 @@ namespace Todo_List_Framework.ucPanel
 
         #endregion
         private System.Windows.Forms.PictureBox pb_addJob;
+        private System.Windows.Forms.Label mainTree;
     }
 }
