@@ -38,3 +38,4 @@ D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.AddNot
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.AddContactForm.resources
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucView.JobView.resources
 D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucView.NoteView.resources
+D:\Programing\Todo-List\Todo-List_Framework\obj\Debug\Todo_List_Framework.ucView.ContactView.resources

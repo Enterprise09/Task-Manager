@@ -29,20 +29,9 @@ namespace Todo_List_Framework.ucPanel
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.pb_addContact = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_addContact)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MesloLGS NF", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(418, 292);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Contact";
             // 
             // pb_addContact
             // 
@@ -61,18 +50,15 @@ namespace Todo_List_Framework.ucPanel
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.pb_addContact);
-            this.Controls.Add(this.label1);
             this.Name = "ucContact";
             this.Size = new System.Drawing.Size(1376, 941);
+            this.Load += new System.EventHandler(this.ucContact_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_addContact)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pb_addContact;
     }
 }

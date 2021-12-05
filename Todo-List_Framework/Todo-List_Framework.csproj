@@ -118,6 +118,12 @@
     <Compile Include="ucPanel\ucNotepad.Designer.cs">
       <DependentUpon>ucNotepad.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucView\ContactView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucView\ContactView.Designer.cs">
+      <DependentUpon>ContactView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucView\JobView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucPanel\ucNotepad.resx">
       <DependentUpon>ucNotepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucView\ContactView.resx">
+      <DependentUpon>ContactView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucView\JobView.resx">
       <DependentUpon>JobView.cs</DependentUpon>

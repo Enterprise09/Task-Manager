@@ -21,8 +21,6 @@ namespace Todo_List_Framework.ucPanel
         private SqlConnection conn =
             new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\Documents\\DataBase.mdf;Integrated Security=True;Connect Timeout=30");
         private String query = null;
-        private int x = 514;
-        private int y = 213;
         private TableLayoutPanel tableLayout;
 
         private void ucNotepad_Load(object sender, EventArgs e)
@@ -37,17 +35,11 @@ namespace Todo_List_Framework.ucPanel
             SqlCommand command = new SqlCommand(query, conn);
             command.Parameters.AddWithValue("@id", "ent");
             SqlDataReader reader = command.ExecuteReader();
-            int x = y = 0;
             while (reader.Read())
             {
                 ucView.NoteView viewer = new ucView.NoteView();
                 viewer.tb_content.Text = reader[1].ToString();
-                tableLayout.Controls.Add(viewer, x, y);
-                x++;
-                if(x > 4)
-                {
-                    y++;
-                }
+                tableLayout.Controls.Add(viewer);
             }
 
             tableLayout.Size = new Size(1200, 1000);
