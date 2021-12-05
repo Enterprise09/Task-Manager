@@ -55,9 +55,8 @@ namespace Todo_List_Framework
             if(result == 1)
             {
                 MessageBox.Show("새로운 일을 추가하였습니다.", "성공", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                (new LoginForm()).Show();
-                //this.Close();
+                
+                this.Close();
             }
             else
             {
@@ -85,39 +84,39 @@ namespace Todo_List_Framework
 
         private void tb_endline_Enter(object sender, EventArgs e)
         {
-            if (tb_from.Text == "End Line")
+            if (tb_endline.Text == "End Line")
             {
-                tb_from.Text = "";
+                tb_endline.Text = "";
             }
         }
 
         private void tb_endline_Leave(object sender, EventArgs e)
         {
-            if (tb_from.Text == "")
+            if (tb_endline.Text == "")
             {
-                tb_from.Text = "End Line";
+                tb_endline.Text = "End Line";
             }
         }
 
         private void tb_request_Enter(object sender, EventArgs e)
         {
-            if (tb_from.Text == "Request")
+            if (tb_request.Text == "Request")
             {
-                tb_from.Text = "";
+                tb_request.Text = "";
             }
         }
 
         private void tb_request_Leave(object sender, EventArgs e)
         {
-            if (tb_from.Text == "")
+            if (tb_request.Text == "")
             {
-                tb_from.Text = "Request";
+                tb_request.Text = "Request";
             }
         }
 
         private void AddJob_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            
         }
     }
 }

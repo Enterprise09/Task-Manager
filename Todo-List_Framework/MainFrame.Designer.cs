@@ -258,11 +258,13 @@ namespace Todo_List_Framework
             // 
             // mainPanel
             // 
+            this.mainPanel.AutoScroll = true;
+            this.mainPanel.AutoSize = true;
             this.mainPanel.BackColor = System.Drawing.Color.White;
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.mainPanel.Location = new System.Drawing.Point(444, 0);
+            this.mainPanel.Location = new System.Drawing.Point(1804, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1376, 941);
+            this.mainPanel.Size = new System.Drawing.Size(0, 941);
             this.mainPanel.TabIndex = 1;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
@@ -295,6 +297,7 @@ namespace Todo_List_Framework
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_profile)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

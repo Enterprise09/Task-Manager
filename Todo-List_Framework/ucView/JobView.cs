@@ -15,6 +15,7 @@ namespace Todo_List_Framework.ucView
         public JobView()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
         }
     }
 }

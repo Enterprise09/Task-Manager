@@ -36,6 +36,7 @@ namespace Todo_List_Framework.ucPanel
             // 
             // pb_addJob
             // 
+            this.pb_addJob.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pb_addJob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.pb_addJob.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_addJob.Image = global::Todo_List_Framework.Properties.Resources.addJob_button;
@@ -59,6 +60,7 @@ namespace Todo_List_Framework.ucPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.mainTree);
             this.Controls.Add(this.pb_addJob);

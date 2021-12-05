@@ -40,6 +40,7 @@ namespace Todo_List_Framework
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.insertJob_button = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rb_complete = new System.Windows.Forms.RadioButton();
             this.state_group.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.insertJob_button)).BeginInit();
@@ -99,13 +100,14 @@ namespace Todo_List_Framework
             // 
             // state_group
             // 
+            this.state_group.Controls.Add(this.rb_complete);
             this.state_group.Controls.Add(this.rb_process);
             this.state_group.Controls.Add(this.rb_notYet);
             this.state_group.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.state_group.Font = new System.Drawing.Font("MesloLGS NF", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.state_group.Location = new System.Drawing.Point(250, 375);
+            this.state_group.Location = new System.Drawing.Point(244, 375);
             this.state_group.Name = "state_group";
-            this.state_group.Size = new System.Drawing.Size(110, 80);
+            this.state_group.Size = new System.Drawing.Size(116, 115);
             this.state_group.TabIndex = 5;
             this.state_group.TabStop = false;
             // 
@@ -164,6 +166,18 @@ namespace Todo_List_Framework
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // rb_complete
+            // 
+            this.rb_complete.AutoSize = true;
+            this.rb_complete.Font = new System.Drawing.Font("MesloLGS NF", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_complete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.rb_complete.Location = new System.Drawing.Point(6, 78);
+            this.rb_complete.Name = "rb_complete";
+            this.rb_complete.Size = new System.Drawing.Size(108, 25);
+            this.rb_complete.TabIndex = 4;
+            this.rb_complete.Text = "complete";
+            this.rb_complete.UseVisualStyleBackColor = true;
+            // 
             // AddJobForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -206,5 +220,6 @@ namespace Todo_List_Framework
         private System.Windows.Forms.RadioButton rb_process;
         private System.Windows.Forms.RadioButton rb_notYet;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.RadioButton rb_complete;
     }
 }

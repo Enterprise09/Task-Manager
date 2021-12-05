@@ -25,9 +25,9 @@ namespace Todo_List_Framework
 
         private void Home_Load(object sender, EventArgs e)
         {
+            this.DoubleBuffered = true;
             this.mainPanel.Controls.Add(ucDashboard);
         }
-
         
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -64,6 +64,8 @@ namespace Todo_List_Framework
         {
             this.mainPanel.Controls.Clear();
             this.mainPanel.Controls.Add(ucJobList);
+            ucJobList.refreshData();
+            ucJobList.Refresh();
             this.Indicator.Location = new Point(0, 421);
         }
 
