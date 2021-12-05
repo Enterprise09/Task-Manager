@@ -44,10 +44,10 @@ namespace Todo_List_Framework
                 }
             }
             
-            command.Parameters.AddWithValue("@id", "ent");
+            command.Parameters.AddWithValue("@id", LoginSession.id);
             command.Parameters.AddWithValue("@from", this.tb_from.Text);
             command.Parameters.AddWithValue("@state", this.state);
-            command.Parameters.AddWithValue("@endline", DateTime.Now.ToString("yyyy-MM-dd"));
+            command.Parameters.AddWithValue("@endline", this.tb_endline.Text);
             command.Parameters.AddWithValue("@request", this.tb_request.Text);
             int result = command.ExecuteNonQuery();
             conn.Close();

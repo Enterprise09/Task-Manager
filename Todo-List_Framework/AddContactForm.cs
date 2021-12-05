@@ -32,7 +32,7 @@ namespace Todo_List_Framework
             conn.Open();
             query = "insert into Contact values(@id, @who, @contact_phone, @contact_note)";
             SqlCommand command = new SqlCommand(query, conn);
-            command.Parameters.AddWithValue("@id", "ent");
+            command.Parameters.AddWithValue("@id", LoginSession.id);
             command.Parameters.AddWithValue("@who", tb_who.Text);
             command.Parameters.AddWithValue("@contact_phone", tb_phone.Text);
             command.Parameters.AddWithValue("@contact_note", tb_note.Text);

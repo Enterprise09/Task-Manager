@@ -12,12 +12,6 @@ namespace Todo_List_Framework
 {
     public partial class MainFrame : Form
     {
-
-        ucPanel.ucDashboard ucDashboard = new ucPanel.ucDashboard();
-        ucPanel.ucJobList ucJobList = new ucPanel.ucJobList();
-        ucPanel.ucNotepad ucNotepad = new ucPanel.ucNotepad();
-        ucPanel.ucContact ucContact = new ucPanel.ucContact();
-
         public MainFrame()
         {
             InitializeComponent();
@@ -25,8 +19,9 @@ namespace Todo_List_Framework
 
         private void Home_Load(object sender, EventArgs e)
         {
-            this.DoubleBuffered = true;
-            this.mainPanel.Controls.Add(ucDashboard);
+            this.DoubleBuffered = true;            
+            this.mainPanel.Controls.Add(new ucPanel.ucDashboard());
+            Console.WriteLine("Login state : " + LoginSession.isLogin.ToString());
         }
         
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
@@ -56,16 +51,14 @@ namespace Todo_List_Framework
         private void lbl_dashboard_Click(object sender, EventArgs e)
         {
             this.mainPanel.Controls.Clear();
-            this.mainPanel.Controls.Add(ucDashboard);
+            this.mainPanel.Controls.Add(new ucPanel.ucDashboard());
             this.Indicator.Location = new Point(0, 333);
         }
 
         private void lbl_jobList_Click(object sender, EventArgs e)
         {
             this.mainPanel.Controls.Clear();
-            this.mainPanel.Controls.Add(ucJobList);
-            ucJobList.refreshData();
-            ucJobList.Refresh();
+            this.mainPanel.Controls.Add(new ucPanel.ucJobList());
             this.Indicator.Location = new Point(0, 421);
         }
 
@@ -73,14 +66,14 @@ namespace Todo_List_Framework
         private void lbl_notePad_Click(object sender, EventArgs e)
         {
             this.mainPanel.Controls.Clear();
-            this.mainPanel.Controls.Add(ucNotepad);
+            this.mainPanel.Controls.Add(new ucPanel.ucNotepad());
             this.Indicator.Location = new Point(0, 509);
         }
 
         private void lbl_contact_Click(object sender, EventArgs e)
         {
             this.mainPanel.Controls.Clear();
-            this.mainPanel.Controls.Add(ucContact);
+            this.mainPanel.Controls.Add(new ucPanel.ucContact());
             this.Indicator.Location = new Point(0, 597);
         }
 
@@ -99,6 +92,8 @@ namespace Todo_List_Framework
                 MessageBoxIcon.Information);
             if(result == DialogResult.Yes)
             {
+                LoginSession.id = "";
+                LoginSession.isLogin = false;
                 this.Hide();
                 (new LoginForm()).Show();
                 //this.Close();

@@ -30,14 +30,16 @@ namespace Todo_List_Framework.ucPanel
         private void ucJobList_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
+            Console.WriteLine("Login state : " + LoginSession.isLogin.ToString());
+            refreshData();
         }
 
         public void refreshData()
         {
             conn.Open();
-            query = "select * from job where Id = @id";
+            query = "select * from job where Id = @id order by endline asc";
             SqlCommand command = new SqlCommand(query, conn);
-            command.Parameters.AddWithValue("@id", "ent");
+            command.Parameters.AddWithValue("@id", LoginSession.id);
             SqlDataReader reader = command.ExecuteReader();
             int x = 52;
             int y = 500;
@@ -62,10 +64,10 @@ namespace Todo_List_Framework.ucPanel
                 }
                 else
                 {
-                    viewer.lbl_state_img.Image = Properties.Resources.notyet;
-                    viewer.BackColor = Color.FromArgb(235, 235, 255);
+                    viewer.lbl_state_img.Image = Properties.Resources.process_state;
+                    viewer.BackColor = Color.FromArgb(225, 225, 255);
                 }
-                viewer.lbl_endLine.Text = reader[3].ToString();
+                viewer.lbl_endLine.Text = reader[3].ToString().Substring(0, 10);
                 viewer.lbl_request.Text = reader[4].ToString();
                 if (toggle)
                 {
@@ -73,7 +75,7 @@ namespace Todo_List_Framework.ucPanel
                 }
                 else
                 {
-                    y = 150;
+                    y = 120;
                 }
                 toggle = !toggle;
                 viewer.Location = new Point(x, y);

@@ -76,7 +76,7 @@ namespace Todo_List_Framework.ucView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
             this.Controls.Add(this.lbl_register_date);
             this.Controls.Add(this.pb_delete_note);
             this.Controls.Add(this.tb_content);

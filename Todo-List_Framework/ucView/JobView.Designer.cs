@@ -29,43 +29,17 @@ namespace Todo_List_Framework.ucView
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_state_img = new System.Windows.Forms.Label();
-            this.lbl_endLine = new System.Windows.Forms.Label();
             this.lbl_from = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_request = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_endLine = new System.Windows.Forms.Label();
+            this.lbl_state_img = new System.Windows.Forms.Label();
             this.lbl_del_button = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbl_state_img
-            // 
-            this.lbl_state_img.AutoSize = true;
-            this.lbl_state_img.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_state_img.Font = new System.Drawing.Font("MesloLGS NF", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_state_img.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_state_img.Image = global::Todo_List_Framework.Properties.Resources.complete;
-            this.lbl_state_img.Location = new System.Drawing.Point(108, 108);
-            this.lbl_state_img.Name = "lbl_state_img";
-            this.lbl_state_img.Size = new System.Drawing.Size(98, 39);
-            this.lbl_state_img.TabIndex = 3;
-            this.lbl_state_img.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_endLine
-            // 
-            this.lbl_endLine.AutoSize = true;
-            this.lbl_endLine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_endLine.Font = new System.Drawing.Font("MesloLGS NF", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_endLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_endLine.Location = new System.Drawing.Point(108, 68);
-            this.lbl_endLine.Name = "lbl_endLine";
-            this.lbl_endLine.Size = new System.Drawing.Size(98, 39);
-            this.lbl_endLine.TabIndex = 3;
-            this.lbl_endLine.Text = "End To";
-            this.lbl_endLine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_from
             // 
@@ -73,9 +47,9 @@ namespace Todo_List_Framework.ucView
             this.lbl_from.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_from.Font = new System.Drawing.Font("MesloLGS NF", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_from.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_from.Location = new System.Drawing.Point(108, 28);
+            this.lbl_from.Location = new System.Drawing.Point(77, 28);
             this.lbl_from.Name = "lbl_from";
-            this.lbl_from.Size = new System.Drawing.Size(98, 39);
+            this.lbl_from.Size = new System.Drawing.Size(129, 39);
             this.lbl_from.TabIndex = 3;
             this.lbl_from.Text = "From";
             this.lbl_from.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -88,9 +62,9 @@ namespace Todo_List_Framework.ucView
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(4, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 39);
+            this.label4.Size = new System.Drawing.Size(66, 39);
             this.label4.TabIndex = 3;
-            this.label4.Text = "State";
+            this.label4.Text = "Stat";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
@@ -101,9 +75,9 @@ namespace Todo_List_Framework.ucView
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(4, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 39);
+            this.label1.Size = new System.Drawing.Size(66, 39);
             this.label1.TabIndex = 3;
-            this.label1.Text = "End To";
+            this.label1.Text = "End";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_request
@@ -126,7 +100,7 @@ namespace Todo_List_Framework.ucView
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(4, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 39);
+            this.label2.Size = new System.Drawing.Size(66, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "From";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -136,28 +110,53 @@ namespace Todo_List_Framework.ucView
             this.tableLayoutPanel1.AutoScroll = true;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbl_request, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.lbl_from, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_endLine, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lbl_state_img, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.lbl_del_button, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_endLine, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.27885F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.27885F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.27885F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.07253F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.07254F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 300);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // lbl_endLine
+            // 
+            this.lbl_endLine.AutoSize = true;
+            this.lbl_endLine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_endLine.Font = new System.Drawing.Font("MesloLGS NF", 10F, System.Drawing.FontStyle.Bold);
+            this.lbl_endLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_endLine.Location = new System.Drawing.Point(77, 68);
+            this.lbl_endLine.Name = "lbl_endLine";
+            this.lbl_endLine.Size = new System.Drawing.Size(129, 39);
+            this.lbl_endLine.TabIndex = 3;
+            this.lbl_endLine.Text = "End To";
+            this.lbl_endLine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_state_img
+            // 
+            this.lbl_state_img.AutoSize = true;
+            this.lbl_state_img.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_state_img.Font = new System.Drawing.Font("MesloLGS NF", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_state_img.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_state_img.Image = global::Todo_List_Framework.Properties.Resources.complete;
+            this.lbl_state_img.Location = new System.Drawing.Point(77, 108);
+            this.lbl_state_img.Name = "lbl_state_img";
+            this.lbl_state_img.Size = new System.Drawing.Size(129, 39);
+            this.lbl_state_img.TabIndex = 3;
+            this.lbl_state_img.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_del_button
             // 
@@ -190,7 +189,6 @@ namespace Todo_List_Framework.ucView
         #endregion
 
         internal System.Windows.Forms.Label lbl_state_img;
-        internal System.Windows.Forms.Label lbl_endLine;
         internal System.Windows.Forms.Label lbl_from;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
@@ -198,5 +196,6 @@ namespace Todo_List_Framework.ucView
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_del_button;
+        internal System.Windows.Forms.Label lbl_endLine;
     }
 }

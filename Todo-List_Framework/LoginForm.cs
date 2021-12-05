@@ -39,16 +39,16 @@ namespace Todo_List_Framework
             if (reader.HasRows)
             {
                 reader.Read();
-                Console.WriteLine("로그인 시도 정보");
-                Console.WriteLine("id : " + reader[0] + "\tpassword : " + reader[1]);
                 if (id.Equals(reader[0]))
                 {
                     if (pw.Equals(reader[1]))
                     {
+                        LoginSession.id = reader[0].ToString();
+                        LoginSession.isLogin = true;
                         this.Hide();
                         (new MainFrame()).Show();
                         //this.Close();
-                        Console.WriteLine("로그인 성공 정보\nid : " + reader[0] + "\tpassword : " + reader[1]);
+                        Console.WriteLine("id : " + reader[0] + "\tpassword : " + reader[1]);
                     }
                     else
                     {

@@ -25,13 +25,15 @@ namespace Todo_List_Framework.ucPanel
         private int completeCount = 0;
         private int processCount = 0;
         private int notYetCount = 0;
+        private int rowsCount = 0;
 
         private void ucDashboard_Load(object sender, EventArgs e)
         {
+            Console.WriteLine("Login state : " + LoginSession.isLogin.ToString());
             conn.Open();
             query = "select state from Job where Id = @id";
             SqlCommand command = new SqlCommand(query, conn);
-            command.Parameters.AddWithValue("@id", "ent");
+            command.Parameters.AddWithValue("@id", LoginSession.id);
             SqlDataReader reader = command.ExecuteReader();
 
             /*
@@ -43,6 +45,7 @@ namespace Todo_List_Framework.ucPanel
 
             while (reader.Read())
             {
+                rowsCount++;
                 if(reader[0].ToString() == "complete")
                 {
                     completeCount++;
@@ -58,9 +61,9 @@ namespace Todo_List_Framework.ucPanel
 
             conn.Close();
 
-            personal_chart.Series["Series1"].Points.Add(completeCount);
-            personal_chart.Series["Series1"].Points.Add(notYetCount);
-            personal_chart.Series["Series1"].Points.Add(processCount);
+            personal_chart.Series["Series1"].Points.Add(rowsCount - completeCount);
+            personal_chart.Series["Series1"].Points.Add(rowsCount - notYetCount);
+            personal_chart.Series["Series1"].Points.Add(rowsCount - processCount);
 
             this.personal_chart.Series["Series1"].Points[0].LegendText = "완료";
             this.personal_chart.Series["Series1"].Points[0].Color = Color.Green;

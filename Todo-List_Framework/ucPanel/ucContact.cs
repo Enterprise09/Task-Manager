@@ -36,7 +36,7 @@ namespace Todo_List_Framework.ucPanel
             conn.Open();
             query = "select * from Contact where Id = @id";
             SqlCommand command = new SqlCommand(query, conn);
-            command.Parameters.AddWithValue("@id", "ent");
+            command.Parameters.AddWithValue("@id", LoginSession.id);
             SqlDataReader reader = command.ExecuteReader();
 
             while (reader.Read())

@@ -32,7 +32,7 @@ namespace Todo_List_Framework
             conn.Open();
             query = "insert into Note values(@id, @content, @register_date)";
             SqlCommand command = new SqlCommand(query, conn);
-            command.Parameters.AddWithValue("@id", "ent");
+            command.Parameters.AddWithValue("@id", LoginSession.id);
             command.Parameters.AddWithValue("@content", tb_content.Text);
             command.Parameters.AddWithValue("@register_date", DateTime.Now.ToString("yyyy-MM-dd"));
 

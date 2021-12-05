@@ -74,6 +74,7 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginSession.cs" />
     <Compile Include="MainFrame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +261,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\yellow_del_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process_state.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
