@@ -29,20 +29,9 @@ namespace Todo_List_Framework.ucPanel
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.pb_AddNote = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_AddNote)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MesloLGS NF", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(567, 378);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 61);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Notepad";
             // 
             // pb_AddNote
             // 
@@ -61,18 +50,15 @@ namespace Todo_List_Framework.ucPanel
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.pb_AddNote);
-            this.Controls.Add(this.label1);
             this.Name = "ucNotepad";
             this.Size = new System.Drawing.Size(1376, 941);
+            this.Load += new System.EventHandler(this.ucNotepad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_AddNote)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pb_AddNote;
     }
 }

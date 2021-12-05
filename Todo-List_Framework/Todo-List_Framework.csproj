@@ -124,6 +124,12 @@
     <Compile Include="ucView\JobView.Designer.cs">
       <DependentUpon>JobView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucView\NoteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucView\NoteView.Designer.cs">
+      <DependentUpon>NoteView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddContactForm.resx">
       <DependentUpon>AddContactForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucView\JobView.resx">
       <DependentUpon>JobView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucView\NoteView.resx">
+      <DependentUpon>NoteView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

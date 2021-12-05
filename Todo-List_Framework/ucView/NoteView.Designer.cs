@@ -62,6 +62,6 @@ namespace Todo_List_Framework.ucView
 
         #endregion
 
-        private System.Windows.Forms.TextBox tb_content;
+        internal System.Windows.Forms.TextBox tb_content;
     }
 }
