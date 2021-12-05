@@ -42,7 +42,7 @@ namespace Todo_List_Framework.ucPanel
             this.personal_chart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.personal_chart.Legends.Add(legend1);
-            this.personal_chart.Location = new System.Drawing.Point(118, 206);
+            this.personal_chart.Location = new System.Drawing.Point(96, 131);
             this.personal_chart.Name = "personal_chart";
             this.personal_chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series1.ChartArea = "ChartArea1";
@@ -50,7 +50,7 @@ namespace Todo_List_Framework.ucPanel
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.personal_chart.Series.Add(series1);
-            this.personal_chart.Size = new System.Drawing.Size(600, 600);
+            this.personal_chart.Size = new System.Drawing.Size(570, 627);
             this.personal_chart.TabIndex = 1;
             this.personal_chart.Text = "chart1";
             // 

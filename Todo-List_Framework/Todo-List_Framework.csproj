@@ -252,5 +252,14 @@
   <ItemGroup>
     <None Include="Resources\notyet.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squre_del_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_del_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_del_button1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

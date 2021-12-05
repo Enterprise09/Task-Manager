@@ -32,6 +32,8 @@ namespace Todo_List_Framework.ucView
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_phone = new System.Windows.Forms.Label();
             this.lbl_note = new System.Windows.Forms.Label();
+            this.pb_delete = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_delete)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_name
@@ -67,16 +69,30 @@ namespace Todo_List_Framework.ucView
             this.lbl_note.TabIndex = 0;
             this.lbl_note.Text = "summary";
             // 
+            // pb_delete
+            // 
+            this.pb_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_delete.Image = global::Todo_List_Framework.Properties.Resources.yellow_del_button1;
+            this.pb_delete.Location = new System.Drawing.Point(225, 10);
+            this.pb_delete.Name = "pb_delete";
+            this.pb_delete.Size = new System.Drawing.Size(33, 8);
+            this.pb_delete.TabIndex = 1;
+            this.pb_delete.TabStop = false;
+            this.pb_delete.Click += new System.EventHandler(this.pb_delete_Click);
+            // 
             // ContactView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(249)))));
+            this.Controls.Add(this.pb_delete);
             this.Controls.Add(this.lbl_note);
             this.Controls.Add(this.lbl_phone);
             this.Controls.Add(this.lbl_name);
             this.Name = "ContactView";
             this.Size = new System.Drawing.Size(270, 120);
+            this.Click += new System.EventHandler(this.ContactView_Click);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_delete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,5 +103,6 @@ namespace Todo_List_Framework.ucView
         internal System.Windows.Forms.Label lbl_name;
         internal System.Windows.Forms.Label lbl_phone;
         internal System.Windows.Forms.Label lbl_note;
+        private System.Windows.Forms.PictureBox pb_delete;
     }
 }

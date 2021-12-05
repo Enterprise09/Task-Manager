@@ -67,33 +67,33 @@ namespace Todo_List_Framework
 
         private void tb_phone_Enter(object sender, EventArgs e)
         {
-            if (tb_who.Text == "phone")
+            if (tb_phone.Text == "phone")
             {
-                tb_who.Text = "";
+                tb_phone.Text = "";
             }
         }
 
         private void tb_phone_Leave(object sender, EventArgs e)
         {
-            if (tb_who.Text == "")
+            if (tb_phone.Text == "")
             {
-                tb_who.Text = "phone";
+                tb_phone.Text = "phone";
             }
         }
 
         private void tb_note_Enter(object sender, EventArgs e)
         {
-            if (tb_who.Text == "note")
+            if (tb_note.Text == "note")
             {
-                tb_who.Text = "";
+                tb_note.Text = "";
             }
         }
 
         private void tb_note_Leave(object sender, EventArgs e)
         {
-            if (tb_who.Text == "")
+            if (tb_note.Text == "")
             {
-                tb_who.Text = "note";
+                tb_note.Text = "note";
             }
         }
     }

@@ -39,6 +39,7 @@ namespace Todo_List_Framework.ucPanel
             {
                 ucView.NoteView viewer = new ucView.NoteView();
                 viewer.tb_content.Text = reader[1].ToString();
+                viewer.lbl_register_date.Text = reader[2].ToString().Substring(0, 10);
                 tableLayout.Controls.Add(viewer);
             }
 
