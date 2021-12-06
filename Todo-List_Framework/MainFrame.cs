@@ -19,7 +19,9 @@ namespace Todo_List_Framework
 
         private void Home_Load(object sender, EventArgs e)
         {
-            this.DoubleBuffered = true;            
+            this.DoubleBuffered = true;
+            this.lbl_profile_name.Text = LoginSession.id.ToUpper();
+            this.lbl_profile_email.Text = LoginSession.id + "@gmail.com";
             this.mainPanel.Controls.Add(new ucPanel.ucDashboard());
             Console.WriteLine("Login state : " + LoginSession.isLogin.ToString());
         }

@@ -47,8 +47,9 @@ namespace Todo_List_Framework
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_profile_email = new System.Windows.Forms.Label();
             this.lbl_profile_name = new System.Windows.Forms.Label();
-            this.pb_profile = new System.Windows.Forms.PictureBox();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_setting)).BeginInit();
@@ -57,7 +58,7 @@ namespace Todo_List_Framework
             ((System.ComponentModel.ISupportInitialize)(this.pb_jobList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_profile)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -218,10 +219,9 @@ namespace Todo_List_Framework
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.lbl_profile_email);
-            this.panel2.Controls.Add(this.lbl_profile_name);
-            this.panel2.Controls.Add(this.pb_profile);
+            this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(444, 333);
@@ -230,31 +230,26 @@ namespace Todo_List_Framework
             // lbl_profile_email
             // 
             this.lbl_profile_email.AutoSize = true;
+            this.lbl_profile_email.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_profile_email.Font = new System.Drawing.Font("MesloLGS NF", 14F, System.Drawing.FontStyle.Bold);
-            this.lbl_profile_email.Location = new System.Drawing.Point(127, 251);
+            this.lbl_profile_email.Location = new System.Drawing.Point(3, 264);
             this.lbl_profile_email.Name = "lbl_profile_email";
-            this.lbl_profile_email.Size = new System.Drawing.Size(190, 24);
+            this.lbl_profile_email.Size = new System.Drawing.Size(436, 67);
             this.lbl_profile_email.TabIndex = 1;
             this.lbl_profile_email.Text = "email@gmail.com";
+            this.lbl_profile_email.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbl_profile_name
             // 
             this.lbl_profile_name.AutoSize = true;
+            this.lbl_profile_name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_profile_name.Font = new System.Drawing.Font("MesloLGS NF", 26F, System.Drawing.FontStyle.Bold);
-            this.lbl_profile_name.Location = new System.Drawing.Point(168, 194);
+            this.lbl_profile_name.Location = new System.Drawing.Point(3, 198);
             this.lbl_profile_name.Name = "lbl_profile_name";
-            this.lbl_profile_name.Size = new System.Drawing.Size(108, 44);
+            this.lbl_profile_name.Size = new System.Drawing.Size(436, 66);
             this.lbl_profile_name.TabIndex = 1;
             this.lbl_profile_name.Text = "NAME";
-            // 
-            // pb_profile
-            // 
-            this.pb_profile.Image = global::Todo_List_Framework.Properties.Resources.health_test;
-            this.pb_profile.Location = new System.Drawing.Point(147, 30);
-            this.pb_profile.Name = "pb_profile";
-            this.pb_profile.Size = new System.Drawing.Size(150, 150);
-            this.pb_profile.TabIndex = 2;
-            this.pb_profile.TabStop = false;
+            this.lbl_profile_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainPanel
             // 
@@ -267,6 +262,35 @@ namespace Todo_List_Framework
             this.mainPanel.Size = new System.Drawing.Size(0, 941);
             this.mainPanel.TabIndex = 1;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.lbl_profile_email, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_profile_name, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(442, 331);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Image = global::Todo_List_Framework.Properties.Resources.health_test;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(436, 198);
+            this.label1.TabIndex = 2;
             // 
             // MainFrame
             // 
@@ -294,8 +318,8 @@ namespace Todo_List_Framework
             ((System.ComponentModel.ISupportInitialize)(this.pb_jobList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_profile)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,8 +344,9 @@ namespace Todo_List_Framework
         private System.Windows.Forms.Panel Indicator;
         private System.Windows.Forms.Label lbl_profile_email;
         private System.Windows.Forms.Label lbl_profile_name;
-        private System.Windows.Forms.PictureBox pb_profile;
         private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
