@@ -35,9 +35,9 @@ namespace Todo_List_Framework.ucView
             this.lbl_request = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_endLine = new System.Windows.Forms.Label();
             this.lbl_state_img = new System.Windows.Forms.Label();
             this.lbl_del_button = new System.Windows.Forms.Label();
+            this.lbl_endLine = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,22 +132,10 @@ namespace Todo_List_Framework.ucView
             this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 300);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // lbl_endLine
-            // 
-            this.lbl_endLine.AutoSize = true;
-            this.lbl_endLine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_endLine.Font = new System.Drawing.Font("MesloLGS NF", 10F, System.Drawing.FontStyle.Bold);
-            this.lbl_endLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_endLine.Location = new System.Drawing.Point(77, 68);
-            this.lbl_endLine.Name = "lbl_endLine";
-            this.lbl_endLine.Size = new System.Drawing.Size(129, 39);
-            this.lbl_endLine.TabIndex = 3;
-            this.lbl_endLine.Text = "End To";
-            this.lbl_endLine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // lbl_state_img
             // 
             this.lbl_state_img.AutoSize = true;
+            this.lbl_state_img.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_state_img.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_state_img.Font = new System.Drawing.Font("MesloLGS NF", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_state_img.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -157,6 +145,7 @@ namespace Todo_List_Framework.ucView
             this.lbl_state_img.Size = new System.Drawing.Size(129, 39);
             this.lbl_state_img.TabIndex = 3;
             this.lbl_state_img.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_state_img.Click += new System.EventHandler(this.lbl_state_img_Click);
             // 
             // lbl_del_button
             // 
@@ -171,6 +160,19 @@ namespace Todo_List_Framework.ucView
             this.lbl_del_button.Size = new System.Drawing.Size(202, 26);
             this.lbl_del_button.TabIndex = 4;
             this.lbl_del_button.Click += new System.EventHandler(this.lbl_del_button_Click);
+            // 
+            // lbl_endLine
+            // 
+            this.lbl_endLine.AutoSize = true;
+            this.lbl_endLine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_endLine.Font = new System.Drawing.Font("MesloLGS NF", 10F, System.Drawing.FontStyle.Bold);
+            this.lbl_endLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_endLine.Location = new System.Drawing.Point(77, 68);
+            this.lbl_endLine.Name = "lbl_endLine";
+            this.lbl_endLine.Size = new System.Drawing.Size(129, 39);
+            this.lbl_endLine.TabIndex = 3;
+            this.lbl_endLine.Text = "End To";
+            this.lbl_endLine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // JobView
             // 
