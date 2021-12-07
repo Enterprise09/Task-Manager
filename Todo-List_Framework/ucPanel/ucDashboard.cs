@@ -116,8 +116,8 @@ namespace Todo_List_Framework.ucPanel
         {
             if (completeCount == 0)
             {
-                personal_chart.Series["Series1"].Points.Add(rowsCount - notYetCount);
-                personal_chart.Series["Series1"].Points.Add(rowsCount - processCount);
+                personal_chart.Series["Series1"].Points.Add(notYetCount);
+                personal_chart.Series["Series1"].Points.Add(processCount);
 
                 this.personal_chart.Series["Series1"].Points[0].LegendText = "진행 중";
                 this.personal_chart.Series["Series1"].Points[0].Color = Color.Blue;
@@ -127,8 +127,8 @@ namespace Todo_List_Framework.ucPanel
             }
             else if (notYetCount == 0)
             {
-                personal_chart.Series["Series1"].Points.Add(rowsCount - completeCount);
-                personal_chart.Series["Series1"].Points.Add(rowsCount - processCount);
+                personal_chart.Series["Series1"].Points.Add(completeCount);
+                personal_chart.Series["Series1"].Points.Add(processCount);
 
                 this.personal_chart.Series["Series1"].Points[0].LegendText = "완료";
                 this.personal_chart.Series["Series1"].Points[0].Color = Color.Green;
@@ -138,8 +138,8 @@ namespace Todo_List_Framework.ucPanel
             }
             else if (processCount == 0)
             {
-                personal_chart.Series["Series1"].Points.Add(rowsCount - completeCount);
-                personal_chart.Series["Series1"].Points.Add(rowsCount - notYetCount);
+                personal_chart.Series["Series1"].Points.Add(completeCount);
+                personal_chart.Series["Series1"].Points.Add(notYetCount);
 
                 this.personal_chart.Series["Series1"].Points[0].LegendText = "완료";
                 this.personal_chart.Series["Series1"].Points[0].Color = Color.Green;
@@ -149,9 +149,9 @@ namespace Todo_List_Framework.ucPanel
             }
             else
             {
-                personal_chart.Series["Series1"].Points.Add(rowsCount - completeCount);
-                personal_chart.Series["Series1"].Points.Add(rowsCount - notYetCount);
-                personal_chart.Series["Series1"].Points.Add(rowsCount - processCount);
+                personal_chart.Series["Series1"].Points.Add(completeCount);
+                personal_chart.Series["Series1"].Points.Add(notYetCount);
+                personal_chart.Series["Series1"].Points.Add(processCount);
 
                 this.personal_chart.Series["Series1"].Points[0].LegendText = "완료";
                 this.personal_chart.Series["Series1"].Points[0].Color = Color.Green;
